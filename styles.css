@@ -13,12 +13,9 @@ Button Text (Hover): #FFFFFF
 Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343*/
 
-
-
 body {
   background-color: #F2F1E8;
 }
-
 
 .navigationBar {
   background-color: #FFFFFF;
@@ -34,18 +31,15 @@ nav {
 nav ul {
   margin: 0;
   padding: 0;
-
-
 }
 
 nav ul li {
   display: inline-block;
   list-style-type: none;
   margin: 20px;
-
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   display: block;
   color: #2B2F26;
   float: left;
@@ -63,33 +57,28 @@ a {
   float: left;
 }
 
-
 h1 {
   font-size: 3em;
   margin-top: 15px;
   margin-bottom: 5px;
 }
 
-
 h2 {
   position: absolute;
   bottom: 10px;
   left: 5px;
   background-color: #2B2F26;
-
 }
 
 h3 {
   font-weight: normal;
   font-size: 2em;
   color: #131511;
-
 }
 
 h1, h3 {
   text-align: center;
   font-family: "Merriweather";
-
 }
 
 div {
@@ -97,14 +86,12 @@ div {
   height: auto;
 }
 
-
 footer {
   background-color: #2B2F26;
   color: #FFFFFF;
   height: 50px;
   padding-left: 15px;
   padding-top: 1.5em;
-
 }
 
 ul {
@@ -113,7 +100,6 @@ ul {
   padding: 0;
   display: block;
   color: #2B2F26;
-
 }
 
 li ul {
@@ -132,9 +118,7 @@ li: hover ul {
 
 li: hover li {
   float: none;
-
 }
-
 
 h2 {
   position: absolute;
@@ -146,7 +130,6 @@ h2 {
 .row1Products {
   display: flex;
 }
-
 
 .product-1 {
   margin: 10px;
@@ -187,16 +170,9 @@ h2 {
   margin-bottom: 5px;
 }
 
-
-
-
-
-
-
 .row2Products {
   display: flex;
 }
-
 
 .product-4 {
   margin: 10px;
@@ -228,10 +204,7 @@ h2 {
   width: 20%;
   object-fit: cover;
   position: relative;
-
 }
-
-
 
 .row2Products img {
   object-fit: cover;
@@ -239,7 +212,6 @@ h2 {
   height: 100%;
   position: relative;
 }
-
 
 .row2Products h5 {
   position: absolute;
@@ -252,4 +224,11 @@ h2 {
 
 h5 {
   background-color: #2B2F26;
+}
+
+
+.birdhouse img {
+  width: 100px;
+  height: auto;
+  float: left;
 }
