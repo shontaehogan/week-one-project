@@ -3,34 +3,66 @@
 
 <head>
   <title>Bent Creek Ceramics</title>
-
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700|Roboto:300,300i,400,400i" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-
+  <link rel="icon" href="images/bent-creek-logo-coral.png" sizes="16x16">
 </head>
 
 <body>
   <header>
-
     <div class="navigationBar">
-
       <img class="logo" src="images/bent-creek-logo.png" alt="bent creek logo">
       <nav>
         <ul>
-          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html">home</a></li>
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="newsletter.html">NEWSLETTER</a></li>
         </ul>
-
       </nav>
     </div>
+
+    <img class="newsletterPic" src="images/background-2.jpg" alt="pottery">
+
   </header>
 
+  <form action="/action_page.php">
 
+    <p class="topSentence">Sign Up for Our Weekly Newsletter</p>
+    <p class="bottomSentence">Stay up to date with events, activities, news and specials.</p>
+
+    <label><b>Name</b></label>
+    <input type="text" placeholder="" name="Name" id="nameInput" required>
+
+    <br>
+
+    <label><b>Email</b></label>
+
+    <input type="email" placeholder="" name="Email" id="emailInput" required>
+
+    <br>
+
+    <div class="clearfix">
+      <button type="submit" id="signupButton" class="submitbtn">Submit</button>
+    </div>
+
+    <script type="text/javascript">
+      var nameInput = document.getElementById('nameInput');
+      var emailInput = document.getElementById('emailInput');
+      var signupButton = document.getElementById('signupButton');
+      signupButton.addEventListener('click', function(e) {
+        var nameVal = nameInput.value;
+        var emailVal = emailInput.value;
+        if (nameVal && emailVal) {
+          alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+          nameInput.value = "";
+          emailInput.value = "";
+        } else {
+          alert('We would love for you to sign up, please provide both your name and email address.');
+        }
+      });
+    </script>
+  </form>
 
 </body>
-
-<footer> Copyright 2017, Bent Creek Ceramics</footer>
-
 </html>

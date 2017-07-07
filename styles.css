@@ -13,6 +13,10 @@ Button Text (Hover): #FFFFFF
 Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343*/
 
+header {
+  box-shadow: 0px 3px 0px 0px #888888;
+}
+
 body {
   background-color: #F2F1E8;
 }
@@ -47,6 +51,19 @@ nav>ul>li>a {
 
 a {
   display: inline-block;
+  text-transform: uppercase;
+}
+
+.navigationBar li a:hover {
+  background-color: #FFFFFF;
+  color: #CD5D67;
+  text-transform: uppercase;
+}
+
+.navigationBar li a:active {
+  background: #FFFFFF;
+  color: #968772;
+  text-transform: uppercase;
 }
 
 .logo {
@@ -74,11 +91,22 @@ h2 {
 
 h3 {
   font-weight: normal;
-  font-size: 2em;
+  font-size: 32px;
   color: #131511;
   font-family: "Merriweather";
   text-align: center;
   font-weight: 100;
+}
+
+h6 {
+  font-size: 32px;
+  font-weight: normal;
+  font-size: 32px;
+  color: #131511;
+  font-family: "Merriweather";
+  text-align: center;
+  font-weight: 100;
+  margin-top: 30px;
 }
 
 div {
@@ -121,8 +149,7 @@ li: hover li {
 }
 
 
-
-/*----------ABOUT PAGE-----------*/
+/*----------HOME PAGE-----------*/
 
 .row1Products {
   display: flex;
@@ -219,6 +246,27 @@ li: hover li {
   margin-bottom: 5px;
 }
 
+
+/*---------ABOUT PAGE----------*/
+
+a:link {
+  color: #968772;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #968772;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #967343;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 .birdhouse img {
   width: 100px;
   height: auto;
@@ -311,4 +359,64 @@ table {
 
 .tr1, .tr3 {
   background-color: lightpink;
+}
+
+
+/*-----------NEWSLETTER PAGE------------*/
+
+form {
+  position: absolute;
+  /*margin: 150px 300px;*/
+  display: inline-block;
+  z-index: 10;
+  background-color: #F2F1E8;
+  padding-left: 35px;
+  top: 50%;
+  left: 25%;
+}
+
+input[type=text], input[type=email] {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 10px;
+  display: inline-block;
+  border-bottom: : 1px solid #968772;
+}
+
+button {
+  background-color: #968772;
+  color: #F2F1E8;
+  padding: 14px 20px;
+  margin: 6px 250px;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+.topSentence {
+  font-size: 30px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.bottomSentence {
+  font-size: 20px;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.newsletterPic {
+  background-image: url(images/background-2.jpg);
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  position: relative;
+  left: 0;
+  top: 0;
 }
